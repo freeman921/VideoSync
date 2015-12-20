@@ -1,7 +1,8 @@
 # VideoSync
 Syncronize your videos with friends ! Watch together and have fun!
+This project is designed to syncronize a same video in multiple local direcotries.
 
-This project is built by Visual Studio 2010, written in C#,
+It is built by Visual Studio 2010, written in C#,
 so you will need to install .NET 4.0 first.
 
 The program is highly bundled with the video player,
