@@ -112,27 +112,6 @@ namespace VideoSyncSpace
 
         } // connect()
 
-        //public void do_pause() { commander.do_pause_play(); }
-
-        
-        #region Key Hook : abandoned
-        /*
-        void gkh_KeyDown(object sender, KeyEventArgs e)
-        {
-            LoggerGUI.log("User pressed Space.");
-            e.Handled = false;  // false = the key will still effects.
-        }
-
-        void keyHookInit()
-        {
-            keyboardHook = new globalKeyboardHook();
-            keyboardHook.HookedKeys.Add(Keys.Space);
-            keyboardHook.KeyDown += new KeyEventHandler(gkh_KeyDown);
-        }
-        */
-        #endregion
-
-
         public void end()
         {
             if (clientSocket != null) clientSocket.Close();

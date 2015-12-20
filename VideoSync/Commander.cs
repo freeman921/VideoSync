@@ -93,7 +93,7 @@ namespace VideoSyncSpace
             return playerProcess.MainWindowHandle;
         }
 
-        /*// temp
+        /*
         public void killThisProcess()
         {
             getProcessAndHandle("VideoSync");

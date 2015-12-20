@@ -18,16 +18,12 @@ namespace VideoSyncSpace
 
         NetworkStream nStream;
         IFormatter formatter = new BinaryFormatter();
-        //StreamReader reader;
-        //StreamWriter writer;
 
         public SingleClientHandler(Socket cli_sock, Server s) 
         {
             server = s;
             this.clientSocket = cli_sock;
             nStream = new NetworkStream(cli_sock);
-            //reader = new StreamReader(nsStream);
-            //writer = new StreamWriter(nsStream);
         }
 
         public EndPoint getRemoteEndPoint() { return clientSocket.RemoteEndPoint; }
@@ -39,12 +35,11 @@ namespace VideoSyncSpace
                 while (true)
                 {
                     MSG msg = (MSG)formatter.Deserialize(nStream);
-                    //String videoTitle = reader.ReadLine();
+                    
                     LoggerGUI.log("Video= " + msg.curVideo);
-                    //String cmd = reader.ReadLine();
                     LoggerGUI.log("Command= " + msg.cmd);
-
                     LoggerGUI.logTitle( clientSocket.RemoteEndPoint.ToString() + " Sent a command.");
+
                     server.orderAllClients( msg, clientSocket.RemoteEndPoint);
                 }
             }
