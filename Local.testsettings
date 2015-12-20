@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="本機" id="b380f63b-f4bd-49d7-b564-8bd674e795b4" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>這些是本機測試回合的預設測試設定。</Description>
+  <Deployment enabled="false" />
+  <Execution>
+    <TestTypeSpecific />
+    <AgentRule name="Execution Agents">
+    </AgentRule>
+  </Execution>
+</TestSettings>
